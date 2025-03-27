@@ -1,4 +1,4 @@
-package com.java8.streams.sorting;
+package com.java8.streams.groupingBy;
 
 import java.util.Arrays;
 import java.util.List;

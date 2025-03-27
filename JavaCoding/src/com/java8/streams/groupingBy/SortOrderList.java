@@ -8,7 +8,7 @@
 //2. Customer: C1, Total Order Value: 1500.0
 //3. Customer: C4, Total Order Value: 2500.0
 
-package com.java8.streams.sorting;
+package com.java8.streams.groupingBy;
 
 import java.time.LocalDate;
 import java.util.Arrays;

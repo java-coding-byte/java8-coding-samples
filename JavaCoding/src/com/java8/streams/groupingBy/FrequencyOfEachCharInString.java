@@ -1,4 +1,4 @@
-package com.java8.streams.sorting;
+package com.java8.streams.groupingBy;
 
 import java.util.Map;
 import java.util.function.Function;
@@ -10,15 +10,14 @@ public class FrequencyOfEachCharInString {
 		
 		String inputString="abccc";
 		
-		Map<Character, Long> frequencyCharCount = 
-				inputString.chars().
-				mapToObj(c->(char)c)
+		Map<Character, Long> frequencyCharCount =
+				
+				inputString.chars()
+				.mapToObj(c->(char)c)
 				.collect(
 				Collectors.groupingBy(Function.identity(),
 						Collectors.counting()));
 		
-		System.out.println(frequencyCharCount);
-		
+		System.out.println(frequencyCharCount);		
 	}
-
 }

@@ -21,8 +21,7 @@ public class JoinDemo extends Thread {
 
 		t1.start();
 		t1.join(); // Wait for t1 to finish before starting t2
-
+		
 		t2.start();
 	}
-
 }
