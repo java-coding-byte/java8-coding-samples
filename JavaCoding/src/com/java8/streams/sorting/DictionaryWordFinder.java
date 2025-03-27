@@ -17,7 +17,7 @@ public class DictionaryWordFinder {
 
 		Set<String> foundWords = findDictionaryWords(input, dictionary);
 
-		System.out.println("Found Words....." + foundWords);
+		System.out.println("Dictionary Found Words....." + foundWords);
 
 	}
 
