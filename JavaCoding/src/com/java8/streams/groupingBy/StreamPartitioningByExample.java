@@ -19,8 +19,7 @@ public class StreamPartitioningByExample {
 		Map<Boolean, List<Object>> partitioned = mixedList.stream()
 				.collect(Collectors.partitioningBy(e -> e instanceof Integer));
 
-		List<Integer> integers = partitioned.get(true)
-				.stream().map(e -> (Integer) e).collect(Collectors.toList());
+		List<Integer> integers = partitioned.get(true).stream().map(e -> (Integer) e).collect(Collectors.toList());
 
 		Set<Integer> set = integers.stream().collect(Collectors.toSet());
 
@@ -29,13 +28,14 @@ public class StreamPartitioningByExample {
 		List<Character> characters = partitioned.get(false).stream().map(e -> (Character) e)
 				.collect(Collectors.toList());
 
-		//System.out.println("Integers: " + integers);
+		// System.out.println("Integers: " + integers);
 		System.out.println("Characters: " + characters);
-		
-		List<Integer> list= List.of(-5, -4, -3, -2, -1);
-		
-		list.stream().sorted((a,b)->b-a).collect(Collectors.toList()).forEach(System.out::println);;
-		
+
+		List<Integer> list = List.of(-5, -4, -3, -2, -1);
+
+		list.stream().sorted((a, b) -> b - a).collect(Collectors.toList()).forEach(System.out::println);
+		;
+
 	}
 
 }

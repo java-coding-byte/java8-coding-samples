@@ -13,8 +13,7 @@ public class SeperateOddEvenNumbers {
 		
 		List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
 
-		Map<Boolean, List<Integer>> map = integerList.stream()
-				.collect(Collectors.partitioningBy(i -> i % 2 == 0));
+		Map<Boolean, List<Integer>> map = integerList.stream().collect(Collectors.partitioningBy(i -> i % 2 == 0));
 
 		Set<Entry<Boolean, List<Integer>>> entrySet = map.entrySet();
 
@@ -32,6 +31,5 @@ public class SeperateOddEvenNumbers {
 				System.out.println(i);
 			}
 		}
-
 	}
 }
