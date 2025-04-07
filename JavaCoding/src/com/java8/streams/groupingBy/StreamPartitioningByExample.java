@@ -34,8 +34,5 @@ public class StreamPartitioningByExample {
 		List<Integer> list = List.of(-5, -4, -3, -2, -1);
 
 		list.stream().sorted((a, b) -> b - a).collect(Collectors.toList()).forEach(System.out::println);
-		;
-
 	}
-
 }

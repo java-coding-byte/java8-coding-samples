@@ -14,9 +14,7 @@ public class FrequencyOfEachCharInString {
 				
 				inputString.chars()
 				.mapToObj(c->(char)c)
-				.collect(
-				Collectors.groupingBy(Function.identity(),
-						Collectors.counting()));
+				.collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 		
 		System.out.println(frequencyCharCount);		
 	}

@@ -3,7 +3,7 @@ package com.java8.streams.sorting;
 import java.util.Arrays;
 import java.util.List;
 
-public class MaxMinValue {
+public class MaxMinValueInList {
 	
 	public static void main(String[] args) {
 		
@@ -20,5 +20,4 @@ public class MaxMinValue {
 		System.out.println(min);
 		
 	}
-
 }

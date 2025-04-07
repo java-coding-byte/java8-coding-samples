@@ -3,7 +3,7 @@ package com.java8.streams.sorting;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-public class MergeArrays {
+public class MergeTwoUnSortedArrays {
 	public static void main(String[] args) {
 
 		int a1[] = { 4, 1, 2, 3 };

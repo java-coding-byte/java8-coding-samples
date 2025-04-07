@@ -13,5 +13,4 @@ public class FibonacciSeries {
         .map(n -> n[0]) // Extract the first element of each pair
         .forEach(System.out::println);
 	}
-
 }
