@@ -15,9 +15,11 @@ public class ImmutableCollectionsExample {
 		List<String> immutableList = List.copyOf(originalList);//Java 10
 
 		Set<String> originalSet = Set.of("X", "Y", "Z");
+		
 		Set<String> immutableSet = Set.copyOf(originalSet);
 
 		Map<String, Integer> originalMap = Map.of("One", 1, "Two", 2);
+		
 		Map<String, Integer> immutableMap = Map.copyOf(originalMap);
 
 		System.out.println("Immutable List: " + immutableList);
