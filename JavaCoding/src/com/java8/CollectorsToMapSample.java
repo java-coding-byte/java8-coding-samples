@@ -10,15 +10,15 @@ public class CollectorsToMapSample {
 
 	public static void main(String[] args) {
 
-		List<String> numbtoStrList = new ArrayList<>();
-		numbtoStrList.add("Six");
-		numbtoStrList.add("Seven");
-		numbtoStrList.add("Three");
-		numbtoStrList.add("Two");
-		numbtoStrList.add("Five");
+		List<String> numberToStrList = new ArrayList<>();
+		numberToStrList.add("Six");
+		numberToStrList.add("Seven");
+		numberToStrList.add("Three");
+		numberToStrList.add("Two");
+		numberToStrList.add("Five");
 
-		Map<String, Integer> map_sample = numbtoStrList.stream()
-				.collect(Collectors.toMap(Function.identity(), String::length));
+		Map<String, Integer> map_sample = numberToStrList.stream().collect(Collectors.toMap(Function.identity(), String::length));
+		
 		System.out.println("Map_Sample.." + map_sample);
 
 	}

@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class ImmutableCollectionsExample {
+	
 	public static void main(String[] args) {
 		
 		// These methods create unmodifiable copies of existing collections.
@@ -14,7 +15,7 @@ public class ImmutableCollectionsExample {
 		
 		List<String> immutableList = List.copyOf(originalList);//Java 10
 
-		Set<String> originalSet = Set.of("X", "Y", "Z");
+		Set<String> originalSet = Set.of("X", "Y", "Z");//Java 9
 		
 		Set<String> immutableSet = Set.copyOf(originalSet);
 
