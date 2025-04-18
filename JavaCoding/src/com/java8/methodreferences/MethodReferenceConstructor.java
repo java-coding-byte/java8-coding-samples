@@ -13,7 +13,7 @@ public class MethodReferenceConstructor {
 	public static void main(String[] args) {
 
 		Supplier<Comp> lambaSupplier = () -> new Comp();
-		System.out.println("Lamba Supplier..." + lambaSupplier.get());
+		System.out.println("Lambda Supplier..." + lambaSupplier.get());
 
 		// Comp new constructor
 		Supplier<Comp> referenceSupplier = Comp::new;
