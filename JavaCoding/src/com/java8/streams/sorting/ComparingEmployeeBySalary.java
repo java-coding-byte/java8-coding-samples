@@ -9,14 +9,11 @@ public class ComparingEmployeeBySalary {
 	String name;
     int age;
     double salary;
-    ComparingEmployeeBySalary(String name, int age, double salary) {
+    
+    public ComparingEmployeeBySalary(String name, int age, double salary) {
         this.name = name;
         this.age = age;
         this.salary = salary;
-    }
-    @Override
-    public String toString() {
-        return name + " (Age: " + age + ", Salary: " + salary + ")";
     }
     
    public static void main(String[] args) {
@@ -29,6 +26,12 @@ public class ComparingEmployeeBySalary {
 			   .thenComparing((ComparingEmployeeBySalary e)->e.salary,Comparator.naturalOrder()));
 	   
 	   System.out.println("Sorted Employees in reverse Order.."+employees);
+	   
 }
+
+   @Override
+   public String toString() {
+       return name + " (Age: " + age + ", Salary: " + salary + ")";
+   }
 
 }

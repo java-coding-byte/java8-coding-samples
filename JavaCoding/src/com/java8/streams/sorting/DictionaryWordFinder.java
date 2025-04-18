@@ -8,17 +8,14 @@ import java.util.stream.Collectors;
 public class DictionaryWordFinder {
 
 	public static void main(String[] args) {
-
 		// Sample dictionary of valid words
 		Set<String> dictionary = new HashSet<>(Arrays.asList("a", "an", "and", "band", "bat", "hand", "that",
 				"sand","at"));
-
 		String input = "sandfreebandthat";
 
 		Set<String> foundWords = findDictionaryWords(input, dictionary);
 
 		System.out.println("Dictionary Found Words....." + foundWords);
-
 	}
 
 	private static Set<String> findDictionaryWords(String input, Set<String> dictionary) {
@@ -27,5 +24,4 @@ public class DictionaryWordFinder {
 				filter(input::contains).
 				collect(Collectors.toSet());
 	}
-
 }

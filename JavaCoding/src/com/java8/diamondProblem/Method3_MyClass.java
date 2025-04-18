@@ -18,7 +18,7 @@ public class Method3_MyClass implements Interface31, Interface32 {
 
 	@Override
 	public void anyMethod() {
-		System.out.println("");
+		System.out.println("anyMethod..");
 	}
 
 	public static void main(String[] args) {

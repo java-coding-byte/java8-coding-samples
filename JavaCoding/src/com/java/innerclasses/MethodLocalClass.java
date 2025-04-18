@@ -1,9 +1,10 @@
 package com.java.innerclasses;
 
 public class MethodLocalClass {
+
 	void outerMethod() {
 
-		String localVar = "I am local";
+		String localVar = "I am Method local class";
 
 		class LocalInner {
 			void print() {

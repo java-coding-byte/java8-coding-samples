@@ -10,7 +10,10 @@ public class UniqueWords {
 
 		String str = "Java is fun and Java is powerful";
 
-		List<String> uniqueWords = Arrays.stream(str.split(" ")).map(String::toLowerCase).distinct().sorted()
+		List<String> uniqueWords = Arrays.stream(str.split(" "))
+				.map(String::toLowerCase)
+				.distinct()
+				.sorted()
 				.collect(Collectors.toList());
 
 		System.out.println(uniqueWords);

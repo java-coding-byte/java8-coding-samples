@@ -8,7 +8,7 @@ public class FrequencyOfEachCharInString {
 	
 	public static void main(String[] args) {
 		
-		String inputString="abccc";
+		String inputString="ABCCC";
 		
 		Map<Character, Long> frequencyCharCount =
 				

@@ -9,13 +9,11 @@ public class MaxMinValueInList {
 		
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 		
-		int max = numbers.stream()
-		                 .max(Integer::compareTo).get();
+		int max = numbers.stream().max(Integer::compareTo).get();
 		
 		System.out.println(max);
 		
-		int min = numbers.stream()
-                .min(Integer::compareTo).get();
+		int min = numbers.stream().min(Integer::compareTo).get();
 		
 		System.out.println(min);
 		

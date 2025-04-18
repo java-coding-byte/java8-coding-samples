@@ -6,6 +6,7 @@ import java.util.stream.Stream;
 public class CheckTwoStringAnagrams {
 	
 	public static void main(String[] args) {
+		
 		String s1 = "RaceCar";
         String s2 = "CarRace";
          
@@ -13,12 +14,10 @@ public class CheckTwoStringAnagrams {
          
         s2 = Stream.of(s2.split("")).map(String::toUpperCase).sorted().collect(Collectors.joining());
          
-        if (s1.equals(s2)) 
-        {
+        if (s1.equals(s2)) {
             System.out.println("Two strings are anagrams");
         }
-        else
-        {
+        else{
             System.out.println("Two strings are not anagrams");
         }
 	}
